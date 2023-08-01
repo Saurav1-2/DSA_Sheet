@@ -7,14 +7,19 @@ struct Pair{
     int max;
 };
 //Method 1: Sorting approach
+//Pair Kth_Min_Max(int arr[],int n,int k)
+//{
+//    sort(arr,arr+n);
+//    Pair minmax{};
+//    minmax.min=arr[k-1];
+//    minmax.max=arr[n-k];
+//
+//    return minmax;
+//}
+
 Pair Kth_Min_Max(int arr[],int n,int k)
 {
-    sort(arr,arr+n);
-    Pair minmax{};
-    minmax.min=arr[k-1];
-    minmax.max=arr[n-k];
 
-    return minmax;
 }
 
 int main()
