@@ -6,6 +6,7 @@ struct Pair{
     int max=INT_MIN;
 };
 //Method 1: Sorting the array
+//O(nlogn) complexity
 //Pair Min_Max(int *arr,int n)
 //{
 //    sort(arr,arr+n);
@@ -18,6 +19,7 @@ struct Pair{
 //}
 
 //Method 2: Linear search
+//O(n) complexity
 
 //Pair Min_Max(int *arr,int n)
 //{
@@ -118,4 +120,3 @@ int main()
     return 0;
 }
 
-//nlogn complexity
