@@ -3,7 +3,7 @@ using namespace std;
 
 int partition(int *arr, int l,int r)
 {
-    int x = arr[r];
+    int x = arr[r-1];
     int i=l;
     for(int j=l;j<=r-1;j++)
     {
@@ -27,14 +27,15 @@ int randomPartition(int *arr, int l,int r)
 
 int kthLargest(int *arr, int l, int r, int k)
 {
-    if(k<0 && k<=r-l+1)
+    if(k>0 && k<=r-l+1)
     {
+        int n = r-l+1;
         int pos = randomPartition(arr,l,r);
-        if(pos-l == k-1)
+        if(pos-l == n-k)
         {
             return arr[pos];
         }
-        if(pos-1>k-1)
+        if(pos-1>n-k)
         {
             return kthLargest(arr,l,pos-1,k);
         }
