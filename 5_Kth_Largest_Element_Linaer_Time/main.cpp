@@ -34,7 +34,7 @@ int kthLargest(int *arr, int l, int r, int k)
         {
             return arr[pos];
         }
-        if(pos-1<k-1)
+        if(pos-1>k-1)
         {
             return kthLargest(arr,l,pos-1,k);
         }
@@ -52,5 +52,10 @@ int main()
     {
         cin>>arr[i];
     }
+    int k;
+    cin>>k;
+    int kthlargest= kthLargest(arr,0,n-1,k);
+    cout<<kthlargest<<endl;
+    return 0;
 
 }
