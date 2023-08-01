@@ -6,7 +6,7 @@ struct Pair{
     int min;
     int max;
 };
-//Method 1: Sorting
+//Method 1: Sorting approach
 Pair Kth_Min_Max(int arr[],int n,int k)
 {
     sort(arr,arr+n);
